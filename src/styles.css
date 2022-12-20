@@ -36,7 +36,7 @@ h3 {
   text-transform: capitalize;
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
-  color: white;
+  color: #ffffff;
 }
 
 p {
@@ -45,7 +45,7 @@ p {
   border-radius: 4px;
   font-size: 18px;
   line-height: 1.5;
-  text-align: center;
+  text-align: left;
 }
 
 .navigation-links {
@@ -69,7 +69,12 @@ p {
 .contact-link {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
-  color: white;
+  color: #ffffff;
+}
+
+.contact-link:hover,
+.primary-link:hover {
+  color: #ffffff;
 }
 
 .about-link {
@@ -117,15 +122,23 @@ img {
   padding-top: 50px;
 }
 
-/* @media only screen and (max-width: 768px) {
-  .weather-img-div {
-    margin-top: 25px;
-  }
-} */
-
 @media only screen and (max-width: 576px) {
   .primary-link {
     display: block;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 34px;
+    text-align: center;
+  }
+
+  p {
     text-align: center;
   }
 }
